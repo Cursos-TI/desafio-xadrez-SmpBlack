@@ -5,6 +5,41 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
+    
+    // Constantes para movimentação
+    
+    const int CASAS_TORRE = 5;
+    const int CASAS_BISPO = 5;
+    const int CASAS_RAINHA = 8;
+
+    // Movimento da TORRE: 5 casas à direita
+
+    printf("Movimento da Torre:\n");
+    for (int i = 1; i <= CASAS_TORRE; i++) {
+        printf("Direita\n");  // Imprime a direção do movimento
+    }
+
+    // Movimento do BISPO: 5 casas na diagonal superior direita
+   
+    printf("\nMovimento do Bispo:\n");
+    int j = 1; // contador
+    while (j <= CASAS_BISPO) {
+        printf("Cima Direita\n");  // Combinação das direções básicas
+        j++;
+    }
+
+    // Movimento da RAINHA: 8 casas para a esquerda
+   
+    printf("\nMovimento da Rainha:\n");
+    int k = 1; // contador
+    do {
+        printf("Esquerda\n");  // Imprime a direção do movimento
+        k++;
+    } while (k <= CASAS_RAINHA);
+
+    return 0; 
+}
+
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
@@ -27,6 +62,3 @@ int main() {
 
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
-
-    return 0;
-}
